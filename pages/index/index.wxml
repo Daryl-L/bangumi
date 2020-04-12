@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view class="banner">
+    <view class="day {{currentTab == 1 ? 'active' : ''}}">星期一</view>
+    <view class="day {{currentTab == 2 ? 'active' : ''}}">星期二</view>
+    <view class="day {{currentTab == 3 ? 'active' : ''}}">星期三</view>
+    <view class="day {{currentTab == 4 ? 'active' : ''}}">星期四</view>
+    <view class="day {{currentTab == 5 ? 'active' : ''}}">星期五</view>
+    <view class="day {{currentTab == 6 ? 'active' : ''}}">星期六</view>
+    <view class="day {{currentTab == 7 ? 'active' : ''}}">星期日</view>
+  </scroll-view>
+  <view class="tab">
+    <swiper style="width: 100%; height:100%" bindchange="switchTab">
+      <swiper-item class="item" item-id="1">
+        <view class="bangumi">
+        <view class="avatar">
+          <image src="https://i0.hdslb.com/bfs/bangumi/image/ba46e686dde37c80ca9ef5c4855d35ad4fecf999.png"></image>
+        </view>
+        </view>
+        <view class="bangumi">
+          
+        </view>
+      </swiper-item>
+      
+      <swiper-item class="item" item-id="2">
+
+      </swiper-item>
+      
+      <swiper-item class="item" item-id="3">
+
+      </swiper-item>
+      
+      <swiper-item class="item" item-id="4">
+
+      </swiper-item>
+      
+      <swiper-item class="item" item-id="5">
+
+      </swiper-item>
+      
+      <swiper-item class="item" item-id="6">
+
+      </swiper-item>
+      
+      <swiper-item class="item" item-id="7">
+
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

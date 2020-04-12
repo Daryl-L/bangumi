@@ -1,0 +1,69 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.banner {
+  background-color:#ff6a99;
+  width: 100%;
+  height: 48rpx;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.day.active {
+  border-bottom: white solid 4rpx;
+}
+
+.day {
+  display: inline-block;
+  margin-left: 18rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.item {
+  background-color: #fafafa;
+  /* background-color: white; */
+  width: 100%;
+}
+
+.tab {
+  height:calc(100vh - 48rpx);
+  width:100%;
+  margin-top:48rpx;
+  display:flex;
+  position: fixed;
+}
+
+.bangumi {
+  height: 140rpx;
+  width: 670rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 0rpx 40rpx #e5f5f7;
+  padding: 20rpx;
+}
+
+.bangumi .avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+}
+
+.bangumi .avatar image {
+  width: 100%;
+  height: 100%;
+}
