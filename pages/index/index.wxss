@@ -46,7 +46,7 @@ page {
   position: fixed;
 }
 
-.bangumi {
+/* .bangumi {
   height: 140rpx;
   width: 670rpx;
   margin-left: 20rpx;
@@ -61,9 +61,74 @@ page {
   width: 140rpx;
   height: 140rpx;
   border-radius: 10rpx;
+  display: inline-block;
 }
 
 .bangumi .avatar image {
   width: 100%;
   height: 100%;
+}
+
+.bangumi .info {
+  height: 140rpx;
+  width: 500rpx;
+  margin-left: 20rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bangumi .title {
+  font-weight: 100;
+  font-size: 50rpx;
+}
+
+.bangumi .time {
+  font-weight: 200;
+  font-size: 30rpx;
+}
+
+.bangumi .copyright {
+  font-weight: 100;
+  font-size: 20rpx;
+} */
+
+.bangumi {
+  display: inline-block;
+  width: 210rpx;
+  height: 300rpx;
+  background: gray;
+  border-radius: 10rpx;
+  margin-left: 32rpx;
+  margin-top: 20rpx;
+  vertical-align: top;
+}
+
+.bangumi .avatar {
+  width: 210rpx;
+  height: 215rpx;
+}
+
+.bangumi .avatar image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.bangumi .info .title {
+  color: white;
+  font-size: 25rpx;
+} 
+
+.bangumi .info {
+  margin-left: 15rpx;
+}
+
+.bangumi .info .time {
+  color: white;
+  font-size: 15rpx;
+}
+
+.bangumi .info .copyright {
+  color: white;
+  font-size: 15rpx;
 }

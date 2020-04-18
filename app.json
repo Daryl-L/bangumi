@@ -6,8 +6,8 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#ff6a99",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "カメハメ.tv",
+    "navigationBarTextStyle":"white"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
