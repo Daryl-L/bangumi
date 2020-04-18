@@ -8,54 +8,25 @@
     <view class="day {{currentTab == 5 ? 'active' : ''}}">星期五</view>
     <view class="day {{currentTab == 6 ? 'active' : ''}}">星期六</view>
     <view class="day {{currentTab == 7 ? 'active' : ''}}">星期日</view>
+    <view class="line line-active-{{currentTab}}"></view>
   </scroll-view>
   <view class="tab">
     <swiper style="width: 100%; height:100%" bindchange="switchTab">
       <swiper-item class="item" item-id="1">
-        <view class="bangumi">
+        <view class="bangumi" wx:for="{{bangumis}}">
           <view class="avatar">
-            <image src="https://i0.hdslb.com/bfs/bangumi/image/b7ce6fd3aacb2edd1bd75e368e8838c2d768dab8.png"></image>
-          </view>
-          <!-- <view class="avatar">
-            <image src="https://i0.hdslb.com/bfs/bangumi/image/ba46e686dde37c80ca9ef5c4855d35ad4fecf999.png"></image>
-          </view>
-          <view class="info">
-            <view class="title">
-              食戟之灵
+            <image src="{{item.avatar}}"></image>
+            <view class="info">
+              <view class="title">
+                {{item.title}}
+              </view>
+              <view class="time">
+                {{item.time}}
+              </view>
+              <view class="copyright">
+                {{item.copyright}}
+              </view>
             </view>
-            <view class="time">
-              周一 19:40
-            </view>
-            <view class="copyright">
-               爱奇艺
-            </view>
-            <view class="detail">
-
-            </view>
-          </view> -->
-        </view>
-        <view class="bangumi">
-
-          <view class="avatar">
-            <image src="https://i0.hdslb.com/bfs/bangumi/image/288a4761744d2c64c4519d7f67c09c9a3b14b76f.jpg"></image>
-          </view>
-          <view class="info">
-            <view class="title">
-              昨日之歌
-            </view>
-            <view class="time">
-              周一 19:40
-            </view>
-            <view class="copyright">
-               哔哩哔哩
-            </view>
-          </view>
-        </view>
-
-        <view class="bangumi">
-
-          <view class="avatar">
-            <image src="https://i0.hdslb.com/bfs/bangumi/image/f09aebfad1f9a5d712540d76bf299482a057527c.png"></image>
           </view>
         </view>
       </swiper-item>

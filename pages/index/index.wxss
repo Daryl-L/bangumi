@@ -21,15 +21,53 @@ page {
   justify-content: center;
 }
 
-.day.active {
-  border-bottom: white solid 4rpx;
+.line {
+  position: absolute;
+  height: 3rpx;
+  width: 107rpx;
+  background-color: white;
+  transition: transform .3s;
 }
+
+.line.line-active-1 {
+  transform: translateX(0);
+}
+
+.line.line-active-2 {
+  transform: translateX(107rpx);
+}
+
+.line.line-active-3 {
+  transform: translateX(214rpx);
+}
+
+.line.line-active-4 {
+  transform: translateX(321rpx);
+}
+
+.line.line-active-5 {
+  transform: translateX(428rpx);
+}
+
+.line.line-active-6 {
+  transform: translateX(535rpx);
+}
+
+.line.line-active-7 {
+  transform: translateX(642rpx);
+}
+
+/* .day.active {
+  border-bottom: white solid 4rpx;
+} */
 
 .day {
   display: inline-block;
-  margin-left: 18rpx;
   color: white;
   font-size: 30rpx;
+  width: 107rpx;
+  letter-spacing: 0;
+  text-align: center;
 }
 
 .item {
@@ -46,52 +84,6 @@ page {
   position: fixed;
 }
 
-/* .bangumi {
-  height: 140rpx;
-  width: 670rpx;
-  margin-left: 20rpx;
-  margin-top: 20rpx;
-  background-color: #ffffff;
-  border-radius: 10rpx;
-  box-shadow: 0rpx 0rpx 40rpx #e5f5f7;
-  padding: 20rpx;
-}
-
-.bangumi .avatar {
-  width: 140rpx;
-  height: 140rpx;
-  border-radius: 10rpx;
-  display: inline-block;
-}
-
-.bangumi .avatar image {
-  width: 100%;
-  height: 100%;
-}
-
-.bangumi .info {
-  height: 140rpx;
-  width: 500rpx;
-  margin-left: 20rpx;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.bangumi .title {
-  font-weight: 100;
-  font-size: 50rpx;
-}
-
-.bangumi .time {
-  font-weight: 200;
-  font-size: 30rpx;
-}
-
-.bangumi .copyright {
-  font-weight: 100;
-  font-size: 20rpx;
-} */
-
 .bangumi {
   display: inline-block;
   width: 210rpx;
@@ -101,11 +93,12 @@ page {
   margin-left: 32rpx;
   margin-top: 20rpx;
   vertical-align: top;
+  position: relative;
 }
 
 .bangumi .avatar {
   width: 210rpx;
-  height: 215rpx;
+  height: 300rpx;
 }
 
 .bangumi .avatar image {
@@ -120,7 +113,20 @@ page {
 } 
 
 .bangumi .info {
-  margin-left: 15rpx;
+  display: flex;
+  padding-left: 15rpx;
+  position: absolute;
+  bottom: 0;
+  height: 150rpx;
+  background: linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.6));
+  z-index: 1;
+  width: 195rpx;
+  vertical-align: bottom;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
 }
 
 .bangumi .info .time {
