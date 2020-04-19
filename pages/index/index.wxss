@@ -88,12 +88,12 @@ page {
   display: inline-block;
   width: 210rpx;
   height: 300rpx;
-  background: gray;
   border-radius: 10rpx;
   margin-left: 32rpx;
   margin-top: 20rpx;
   vertical-align: top;
   position: relative;
+  box-shadow: 1rpx 1rpx 3rpx 1rpx gray;
 }
 
 .bangumi .avatar {

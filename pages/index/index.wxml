@@ -11,7 +11,7 @@
     <view class="line line-active-{{currentTab}}"></view>
   </scroll-view>
   <view class="tab">
-    <swiper style="width: 100%; height:100%" bindchange="switchTab">
+    <swiper style="width: 100%; height:100%" bindchange="switchTab" circular="true">
       <swiper-item class="item" item-id="1">
         <view class="bangumi" wx:for="{{bangumis}}">
           <view class="avatar">
